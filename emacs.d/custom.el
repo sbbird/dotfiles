@@ -12,7 +12,6 @@
  '(ruby-deep-indent-paren-style nil)
  '(scroll-bar-mode nil))
 
-
 ;; neotree
 ;;(global-set-key [f8] 'neotree-toggle)
 
@@ -26,5 +25,11 @@
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 (global-set-key (kbd "M-p") 'ace-window)
+
+;; in ubuntu, js2-mode only bind newline-and-indent on C-j but not RET
+(add-hook 'js2-mode-hook '(lambda ()
+  (local-set-key (kbd "RET") 'newline-and-indent)))
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 (setq prelude-whitespace nil)
