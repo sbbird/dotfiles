@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=emacs --daemon
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=emacs daemon
+Name=emacs daemon
+Comment[en_US]=start an emacs daemon
+Comment=start an emacs daemon
