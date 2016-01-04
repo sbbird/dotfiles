@@ -27,10 +27,10 @@ sudo apt-get install emacs24 emacs24-el emacs24-common-non-dfsg
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 
 rm -f ~/.emacs.d/personal/custom.el
-ln -s emacs.d/custom.el ~/.emacs.d/personal/custom.el
+ln -s ~/dotfiles/emacs.d/custom.el ~/.emacs.d/personal/custom.el
 
 rm -f ~/.emacs.d/prelude-modules.el
-ln -s emacs.d/prelude-modules.el ~/.emacs.d/prelude-modules.el
+ln -s ~/dotfiles/emacs.d/prelude-modules.el ~/.emacs.d/prelude-modules.el
 
 mkdir -p ~/.config/autostart/
 cp ~/dotfiles/ubuntu/emacs.desktop ~/.config/autostart
